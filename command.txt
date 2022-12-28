@@ -1,0 +1,14 @@
+
+/// before state install vitis check libtinfo package status
+sudo apt update
+sudo apt install libtinfo-dev
+sudo ln -s /lib/x86_64-linux-gnu/libtinfo.so.6 /lib/x86_64-linux-gnu/libtinfo.so.5
+
+/// OpenCl Packages
+sudo apt-get install ocl-icd-libopencl1
+sudo apt-get install opencl-headers
+sudo apt-get install ocl-icd-opencl-dev
+
+/// Net Tools Package(needed for Qemu)
+sudo apt install net-tools
+sudo apt install g++ gcc git make
